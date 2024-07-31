@@ -28,8 +28,8 @@ void generate_train_image(const string &filename, Mat &converted_image, vector<d
         for (int x = 0; x < image.cols; ++x)
         {
             int pixel = image.at<uchar>(y, x);
-            int pixel = (pixel / 51) * 51;
 
+            pixel = (pixel / 51) * 51;
             convert.at<uchar>(y, x) = pixel;
 
             data.push_back(pixel);
