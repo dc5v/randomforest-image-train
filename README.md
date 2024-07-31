@@ -36,4 +36,6 @@ struct TreeNode
   
 - MSE
 
-  \[ MSE = \frac{N_{left} \cdot \sigma^2_{left} + N_{right} \cdot \sigma^2_{right}}{N_{left} + N_{right}} \]
+  $$
+  \{ MSE = \frac{N_{left} \cdot \sigma^2_{left} + N_{right} \cdot \sigma^2_{right}}{N_{left} + N_{right}} \}
+  $$
