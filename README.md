@@ -11,8 +11,21 @@ cmake ..
 make
 ```
 
+## Test
+
+`/test/test.sh` 파일을 작성했음. 요긴하게 쓰세용
+
+```sh
+cd test
+./test.sh [...cpp] [optional...args]
+
+# i.e. 
+# ./test.sh image.test.cpp origin.jpg
+```
+
 ## TreeNode
 
+`randomforest.hpp`
 ```cpp
 struct TreeNode
 {
@@ -28,6 +41,23 @@ struct TreeNode
 - threshold: 분할 임계값
 - value: 예측 값
 - left, right: 좌우 자식 노드
+
+
+## Parameters
+
+`paramters.hpp`
+```cpp
+#define MODEL_FILENAME "randomforest-image-train.model"
+#define GAUSSIAN_SIZE 5
+#define COLOR_LIMIT 3
+#define FOREST_DEPTH 10
+#define FOREST_TREES 5
+```
+- MODEL_FILENAME: 저장할 모델파일명
+- GAUSSIAN_SIZE: 가우시안 블러 사이즈
+- COLOR_LIMIT: 포스터라이즈 컬러제한수
+- FOREST_DEPTH: 랜덤포레스트 노드별 최대 깊이
+- FOREST_TREES: 랜덤포레스트 노드의 최대 나무 수
 
 ## 평균, 분산, MSE
   
