@@ -17,14 +17,14 @@ make
 
 ## Test
 
-`/test/test` 파일을 작성했음. 요긴하게 쓰세용
+`/test/test.sh` 파일을 작성했음. 요긴하게 쓰세용
 
 ```sh
-cd test
+cd test.sh
 ./test [...cpp] [optional...args]
 
 # i.e. 
-# ./test image.test.cpp origin.jpg
+# ./test.sh image.test.cpp origin.jpg
 ```
 
 ## TreeNode
