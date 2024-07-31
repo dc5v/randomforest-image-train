@@ -13,6 +13,9 @@ void generate_train_image(const string &filename, Mat &converted_image, vector<d
 {
     Mat image = imread(filename, IMREAD_GRAYSCALE);
 
+    cout << "imread" << filename << "\n";
+
+
     if (image.empty())
     {
         cerr << "error: image file not found " << filename << "\n";
@@ -22,6 +25,7 @@ void generate_train_image(const string &filename, Mat &converted_image, vector<d
     GaussianBlur(image, image, Size(5, 5), 0);
 
     Mat convert = image.clone();
+    int color = cvRound(255.0 / COLOR_LIMIT);
 
     for (int y = 0; y < image.rows; ++y)
     {
@@ -29,7 +33,7 @@ void generate_train_image(const string &filename, Mat &converted_image, vector<d
         {
             int pixel = image.at<uchar>(y, x);
 
-            pixel = (pixel / 51) * 51;
+            pixel = (pixel / color) * color;
             convert.at<uchar>(y, x) = pixel;
 
             data.push_back(pixel);
