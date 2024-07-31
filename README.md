@@ -1,6 +1,10 @@
 # randomforest-image-train
 
-Tensorflow 쓰기싫어서 걍 만들어봄;
+Tensorflow 쓰기싫어서 걍 만들어봤습니다.
+
+랜덤포레스트에 대해 이해하기 쉽도록, 단순하고 심플하게 작성했습니다.
+
+누군가 도움이 되기를 바라며...
 
 ## Build
 
@@ -72,3 +76,11 @@ struct TreeNode
   ```math
   MSE = \frac{N_{left} \cdot \sigma^2_{left} + N_{right} \cdot \sigma^2_{right}}{N_{left} + N_{right}}
   ```
+
+
+## License
+
+Unlicense. 
+
+> Always unlicense 🫶🏼
+
