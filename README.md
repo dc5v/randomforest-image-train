@@ -1,6 +1,6 @@
 # randomforest-image-train
 
-
+Tensorflow 쓰기싫어서 걍 만들어봄;
 
 ## TreeNode
 
@@ -29,6 +29,7 @@ struct TreeNode
   ```math
   분산 = \frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2
   ```
+  
   ```math
   MSE = \frac{N_{left} \cdot \sigma^2_{left} + N_{right} \cdot \sigma^2_{right}}{N_{left} + N_{right}}
   ```
