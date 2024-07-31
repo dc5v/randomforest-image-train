@@ -2,6 +2,15 @@
 
 Tensorflow 쓰기싫어서 걍 만들어봄;
 
+## Build
+
+```sh
+mkdir build
+cd build
+cmake ..
+make
+```
+
 ## TreeNode
 
 ```cpp
