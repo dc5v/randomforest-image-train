@@ -1,0 +1,6 @@
+.vscode
+build/*
+.clang-format
+*.jpg
+*.jpeg
+*.png
