@@ -21,21 +21,14 @@ struct TreeNode
 - left, right: 좌우 자식 노드
 
 ## 평균, 분산, MSE
-
-- 평균 
   
-  $$
-  \{ \frac{1}{n} \sum_{i=1}^{n} x_i \}
-  $$
-
-- 분산
+  ```math
+  평균 = \frac{1}{n} \sum_{i=1}^{n} x_i
+  ```
   
-  $$
-  \{ \frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2 \}
-  $$
-  
-- MSE
-
-  $$
-  \{ MSE = \frac{N_{left} \cdot \sigma^2_{left} + N_{right} \cdot \sigma^2_{right}}{N_{left} + N_{right}} \}
-  $$
+  ```math
+  분산 = \frac{1}{n} \sum_{i=1}^{n} (x_i - \mu)^2
+  ```
+  ```math
+  MSE = \frac{N_{left} \cdot \sigma^2_{left} + N_{right} \cdot \sigma^2_{right}}{N_{left} + N_{right}}
+  ```
