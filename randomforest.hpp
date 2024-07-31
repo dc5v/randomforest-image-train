@@ -1,6 +1,7 @@
 #ifndef RANDOMFOREST_HPP
 #define RANDOMFOREST_HPP
 
+#include "parameters.hpp"
 #include <algorithm>
 #include <cstdlib>
 #include <fstream>
@@ -11,8 +12,6 @@
 #include <string>
 #include <thread>
 #include <vector>
-
-#define MODEL_FILENAME "randomforest-image-train.model"
 
 using namespace std;
 
@@ -39,6 +38,7 @@ TreeNode *forest_create_node()
     node->value = 0.0;
     node->left = nullptr;
     node->right = nullptr;
+
     return node;
 }
 
@@ -48,6 +48,7 @@ void tree_free(TreeNode *node)
     {
         tree_free(node->left);
         tree_free(node->right);
+
         delete node;
     }
 }
